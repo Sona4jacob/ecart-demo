@@ -1,0 +1,31 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src={{pdata.img}} alt="..." /></div>
+            <div class="col-md-6">
+                <div class="small mb-1">SKU: BST-498</div>
+                <h1 class="display-5 fw-bolder">{{pdata.productName}}</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through">rs {{pdata.fprice}}</span> &nbsp;&nbsp;
+                    <span>rs {{pdata.price}}</span>
+                </div>
+                <p style="font-size: 30px;font-weight: bolder;color: rgb(46, 126, 102);"> &nbsp;&nbsp; {{pdata.rating}} <br><span style="font-weight: lighter;font-size: 21px;color: black;">rating</span></p>
+                <p style="text-align: right; margin-top: -97px;font-size: 30px;font-weight: bolder;color: rgb(46, 126, 102);">{{pdata.review}} <br><span style="font-weight: lighter;font-size: 21px;color: black;">&nbsp;&nbsp;review</span></p>
+
+                <p class="lead">{{pdata.discription}}</p>
+                <p style="color: rgb(176, 155, 129);">Get Flat 1000 Off On ICICI Credit Cards, Debit Cards, Credit Card EMI & Debit Card EMI Transactions</p>
+                <p style="color: rgb(252, 196, 123); font-weight: bolder;">Apply Coupon ICICIPF1000 | Minimum Order Value Is 15,000/-</p>
+                <div class="d-flex">
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        <a id="edit"  href="products/edit products/{{pdata.id}}">edit</a>
+                    </button>
+                    <button (click)="deleteItem()" style="margin-left: 8%;" class="btn btn-outline-dark flex-shrink-0" type="button">
+                        <i class="bi-cart-fill me-1"></i>
+                        delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

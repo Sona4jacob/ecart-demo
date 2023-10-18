@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+  @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Alegreya+Sans+SC:wght@500&family=Bungee+Spice&family=Caveat&family=Cinzel&family=Dancing+Script&family=Monoton&family=Playfair+Display&family=Roboto+Slab&family=Rubik+Wet+Paint&family=Smokum&family=Uncial+Antiqua&display=swap');
+*{
+    font-family: cinzel;
+}

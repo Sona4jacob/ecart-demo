@@ -1,0 +1,36 @@
+.navbar-brand{
+    font-family: dancing script;
+    color: rgb(207, 165, 113);
+font-weight: bolder;
+font-size: 30px;}
+.container{
+    margin-left: 1px;
+}
+.img-fluid{
+    width: 150px;
+    height: 80px;   
+}
+#logo {
+    background-color: transparent; /* Set the background color to transparent */
+}
+
+
+/* Add CSS for phone view */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: flex;
+        align-items: center; /* Vertically center align the logo and text */
+        font-family: 'Dancing Script', cursive; /* Ensure the correct font family */
+        color: rgb(207, 165, 113);
+        font-weight: bolder;
+        font-size: 14px; /* Adjust the font size as needed */
+        margin-left: 25px;
+        padding-left: 5px;
+    }
+
+    .navbar-brand img {
+        width: 40px; /* Adjust the logo width as needed */
+        height: 40px; /* Adjust the logo height as needed */
+        margin-right: 10px; /* Add some spacing between the logo and text */
+    }
+}

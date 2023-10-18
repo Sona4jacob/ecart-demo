@@ -1,0 +1,17 @@
+button:hover{
+background-color: rgb(224, 144, 39);
+border: 1px wheat solid;
+transform: scale(1.05);
+}
+button a:hover{
+    color: #ffff;
+}
+#edit{
+    text-decoration: none;color: #0d0c0c;
+}
+#edit:hover{
+    color: #ffff;
+}
+.lead{
+    margin-top: 70px;
+}

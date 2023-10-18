@@ -1,0 +1,30 @@
+form{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h1{
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(176, 129, 72);
+}
+button{
+    background-color: rgb(255, 175, 78);
+    color: rgb(255, 255, 255);
+    border-radius: 8%;
+    border: 2px rgb(255, 175, 78) solid;
+    margin-left: 45%;
+}
+.form-outline{
+padding: 10px;
+}
+@media screen and(max-width:767){
+    form{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+    }
+     
+}

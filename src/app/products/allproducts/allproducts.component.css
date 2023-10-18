@@ -1,0 +1,133 @@
+/* Default styles for larger screens */
+.tagline {
+  color: rgb(96, 145, 131);
+  font-size: 40px;
+  text-align: center;
+  margin-top: -312px;
+  margin-left: 400px;
+  padding-left: 30%;
+  padding-bottom: 5%;
+}
+
+.explore {
+  border: 2px solid bisque;
+  width: 13%;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5%;
+  margin-left: 75%;
+  margin-top: -129px;
+  margin-bottom: 91px;
+  color: rgb(227, 159, 76);
+}
+.explore:hover{
+  transform: scale(1.05);
+}
+
+#img {
+  display: none;
+}
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product-links {
+  text-align: right;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: #fbb72c;
+}
+#product-img{
+  width: 223px;
+  height:280px;
+}
+
+.btn{
+  border: 1px solid #fbb72c ;
+  color: #467e66;
+  font-weight: bolder;
+}
+.btn:hover{
+  background-color: #fbb72c;
+  color: #eee;
+}
+h2{
+  color: #467e66;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 15px;
+}
+.cat{
+  width: 160px;
+  height: 170px;
+}
+p{
+  font-family: cinzel;
+}
+#catagory{
+  margin-left: 45px;
+}
+.carousel-item img{
+  height: 300px;
+}
+/* Styles for phone view */
+@media screen and (max-width: 767px) {
+  .tagline {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+
+  #carouselExampleFade {
+    display: none;
+  }
+
+  .explore {
+    border: 2px solid bisque;
+    width: 70%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 5%;
+    color: rgb(227, 159, 76);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #product-img{
+    width: 328px;
+    height: 320px;
+  }
+}

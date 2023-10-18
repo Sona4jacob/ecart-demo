@@ -1,0 +1,98 @@
+<h1>edit product</h1>
+
+<form (ngSubmit)="update()" class="w-75" action="" >
+  
+  <div class="form-outline">
+    
+    
+    <input [(ngModel)]="pdata.productName"
+      name="productName"
+      type="text"
+      id="1"
+      class="form-control"
+      placeholder="product name"
+    />
+  </div>
+  
+  <div class="form-outline">
+    <input
+    [(ngModel)]="pdata.catagoryId"
+      name="catagoryId"
+      type="text"
+      id="2"
+      class="form-control"
+      placeholder="catagory id"
+    />
+  </div>
+  <div class="form-outline">
+    <input
+    [(ngModel)]="pdata.discription"
+      name="discription"
+      type="text"
+      id="3"
+      placeholder="discription"
+      class="form-control"
+    />
+  </div>
+  <div class="form-outline">
+    
+    <input
+    [(ngModel)]="pdata.fprice"
+      name="price"
+      type="text"
+      id="4"
+      placeholder="price"
+      class="form-control"
+    />
+    <!-- fprice-->
+  </div>
+  <div class="form-outline">
+   
+    <input
+    [(ngModel)]="pdata.price"
+      name="fprice"
+      type="text"
+      id="5"
+      class="form-control"
+      placeholder="discount"
+    />
+  </div>
+  <div class="form-outline">
+   
+    <input
+    [(ngModel)]="pdata.img"
+      name="img"
+      type="text"
+      id="6"
+      class="form-control"
+      placeholder="image url"
+    />
+  </div>
+  <div class="form-outline">
+    
+    <input
+    [(ngModel)]="pdata.rating"
+
+      name="rating"
+      type="text"
+      id="7"
+      placeholder="rating"
+      class="form-control"
+    />
+  </div>
+  <div class="form-outline">
+   
+    <input
+    [(ngModel)]="pdata.review"
+
+      name="review"
+      type="text"
+      id="8"
+      placeholder="product review"
+      class="form-control"
+    />
+  </div>
+  
+  
+  <button type="submit">update</button>
+</form>

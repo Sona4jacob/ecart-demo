@@ -1,0 +1,247 @@
+<h1>Add product</h1>
+
+<form (ngSubmit)="addNewProduct()" class="w-75" action="" [formGroup]="addForm">
+  <div class="form-outline">
+    <input
+      formControlName="id"
+      name="id"
+      type="number"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">product id</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="this.addForm.get('id')?.errors && this.addForm.get('id')?.touched"
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers
+      </p>
+    </div>
+    <input
+      name="productName"
+      formControlName="productName"
+      type="text"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">product name</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('productName')?.errors &&
+        this.addForm.get('productName')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only charecters
+      </p>
+    </div>
+    <input name="catagory" type="text" id="form12" class="form-control" />
+    <label class="form-label" for="form12">catagory</label>
+  </div>
+  <div class="form-outline">
+    <input
+      name="catagoryId"
+      formControlName="catagoryId"
+      type="text"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">catagory id</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('catagoryId')?.errors &&
+        this.addForm.get('catagoryId')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers 
+      </p>
+    </div>
+    <input
+      name="discription"
+      formControlName="discription"
+      type="text"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">discription</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('discription')?.errors &&
+        this.addForm.get('discription')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers and charecters
+      </p>
+    </div>
+    <input
+      name="price"
+      formControlName="price"
+      type="number"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">price</label
+    ><!-- fprice-->
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('price')?.errors && this.addForm.get('price')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers
+      </p>
+    </div>
+    <input
+      name="fprice"
+      formControlName="fprice"
+      type="number"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">discount</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('fprice')?.errors &&
+        this.addForm.get('fprice')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers and charecters
+      </p>
+    </div>
+    <input
+      name="img"
+      formControlName="img"
+      type="text"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">image url</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('img')?.errors && this.addForm.get('img')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only url
+      </p>
+    </div>
+    <input
+      name="rating"
+      formControlName="rating"
+      type="number"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">rating</label>
+  </div>
+  <div class="form-outline">
+    <div
+      *ngIf="
+        this.addForm.get('rating')?.errors &&
+        this.addForm.get('rating')?.touched
+      "
+    >
+      <p
+        style="
+          color: red;
+          font-family: cinzel;
+          font-size: 15px;
+          text-align: center;
+        "
+      >
+        Accept only Numbers
+      </p>
+    </div>
+    <input
+      name="review"
+      formControlName="review"
+      type="number"
+      id="form12"
+      class="form-control"
+    />
+    <label class="form-label" for="form12">product review</label>
+  </div>
+  <div
+    *ngIf="
+      this.addForm.get('review')?.errors && this.addForm.get('review')?.touched
+    "
+  >
+    <p
+      style="
+        color: red;
+        font-family: cinzel;
+        font-size: 15px;
+        text-align: center;
+      "
+    >
+      Accept only Numbers
+    </p>
+  </div>
+  <button type="submit">Add item</button>
+</form>
